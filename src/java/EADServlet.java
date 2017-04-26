@@ -49,7 +49,7 @@ public class EADServlet extends HttpServlet {
         Statement stmt = null;
         
         try {
-                    Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             
             conn = DriverManager.getConnection(url, "liferay", "liferay");

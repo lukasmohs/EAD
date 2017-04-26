@@ -15,8 +15,8 @@
     </head>
     <body>
         <h1> Thanks for submission <h1>
-        <% if(request.getParameter("firstname")!=null) { %>
-            <h1>Results for <i><%= request.getParameter("firstname") %> </i> :</h1>
+        <% if(request.getParameter("firstname")!=null && request.getParameter("lastname") != null) { %>
+            <h1>Input from <i><%= request.getParameter("firstname") %> <%= request.getParameter("lastname") %> </i> :</h1>
         <% } %>
     </body>
 </html>
